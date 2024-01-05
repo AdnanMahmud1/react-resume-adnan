@@ -6,10 +6,11 @@ pipeline {
 
         stage("build"){
             steps {
+                 sh 'npm install --force'
+                 sh 'npm run build'
                 echo 'building the application...'
                 echo 'Application builing'
-                // sh 'npm install --force'
-                // sh 'npm build'
+
             }
         }
         stage("test"){
