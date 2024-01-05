@@ -7,6 +7,7 @@ pipeline {
         stage("build"){
             steps {
                 echo 'building the application...'
+                echo 'Application builing'
                 // sh 'npm install --force'
                 // sh 'npm build'
             }
