@@ -18,7 +18,6 @@ pipeline {
         stage('NPM Package Install') {
           steps {
             sh 'npm i --force'
-            sh 'npm i'
           }
         }
 
